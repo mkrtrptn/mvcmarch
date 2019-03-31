@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    @foreach (var i in ViewBag.tech)
+    {
+        <span style="color:black;background-color:burlywood;font-size:x-large"> @i </span><br />
+    }
+
+    <br />
+
+    @ViewBag.result   <br />
+    <p>----------------------------------------------------------</p>
+
+    @foreach (var i in (List<string>)ViewData["newtech"])
+    {
+        <span style="color:black;background-color:burlywood;font-size:x-large"> @i </span><br />
+    }
+
+    <br />
+
+    @ViewData["value"]
+
+    <p>----------------------------------------------------------</p>
+
+    <h1> Viewdata To ViewBag </h1>
+    @foreach(var i in ViewBag.newtech)
+    {
+        
+        <h3>@i</h3>
+    }
+
+    <br />
+
+    <h1>Viewbag To ViewData </h1>
+    @foreach(var i in (List<string>)ViewData["tech"])
+    {
+        <h3>@i</h3>
+    }
+
+
+</body>
+</html>

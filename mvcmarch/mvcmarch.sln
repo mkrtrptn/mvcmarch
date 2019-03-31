@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorViewEngineApp4", "Razo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResultTypes", "ResultTypes\ResultTypes.csproj", "{393AC884-5BFF-4621-9D46-5D0A482673B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewbagViewdataApp5", "ViewbagViewdataApp5\ViewbagViewdataApp5.csproj", "{6D78075A-EDD9-4FF1-BD7E-D4E3BB1D88D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{393AC884-5BFF-4621-9D46-5D0A482673B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{393AC884-5BFF-4621-9D46-5D0A482673B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{393AC884-5BFF-4621-9D46-5D0A482673B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D78075A-EDD9-4FF1-BD7E-D4E3BB1D88D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D78075A-EDD9-4FF1-BD7E-D4E3BB1D88D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D78075A-EDD9-4FF1-BD7E-D4E3BB1D88D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D78075A-EDD9-4FF1-BD7E-D4E3BB1D88D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
