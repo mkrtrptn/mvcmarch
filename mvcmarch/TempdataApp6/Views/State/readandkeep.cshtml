@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>readandkeep</title>
+</head>
+<body>
+    <div style="font-size:x-large">
+        @{
+            @TempData["value"].ToString()
+            TempData.Keep("value");
+        }
+    </div>
+    <a href="~/State/Index">Home </a><br />
+</body>
+</html>
