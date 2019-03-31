@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationApp9", "Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialViewApp10", "PartialViewApp10\PartialViewApp10.csproj", "{64E0CF21-944E-4EFD-8D05-8BCCA1E25517}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapApp11", "BootstrapApp11\BootstrapApp11.csproj", "{37B49BF2-ABFD-49DB-BD7E-4E6174F444F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{64E0CF21-944E-4EFD-8D05-8BCCA1E25517}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64E0CF21-944E-4EFD-8D05-8BCCA1E25517}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64E0CF21-944E-4EFD-8D05-8BCCA1E25517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B49BF2-ABFD-49DB-BD7E-4E6174F444F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B49BF2-ABFD-49DB-BD7E-4E6174F444F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B49BF2-ABFD-49DB-BD7E-4E6174F444F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B49BF2-ABFD-49DB-BD7E-4E6174F444F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
