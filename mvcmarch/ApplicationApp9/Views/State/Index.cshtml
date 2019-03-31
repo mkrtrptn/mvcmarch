@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div style="background-color:brown" align="center">
+        <h2 style="color:white"> Visual Studio 2019 Launch : Comment Issues </h2>
+
+        <div>
+            <form method="post" action="~/State/store">
+                <h2 style="color:white"> Cooment Here :</h2>  <textarea name="cmt"></textarea><br />
+            <input type="submit" style="font-size:x-large;color:beige;background-color:coral" value="Comment"/>
+            </form>
+        </div>
+        <div style="color:white;font-size:medium">
+            @Html.Raw(HttpContext.Current.Application["comments"].ToString());
+        </div>
+    </div>
+
+
+</body>
+</html>
