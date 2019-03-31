@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div align="center" style="font-size:x-large"> 
+    <a href="~/Results/viewdemo">View Demo</a><br />
+    <a href="~/Results/contentdemo">Content Demo</a><br />
+    <a href="~/Results/routedemo">Route Demo</a><br />
+    <a href="~/Results/filedemo">file Demo</a><br />
+    <a href="~/Results/redirectdemo">Redirect Demo</a><br />
+    <a href="~/Results/partialviewdemo">PartialView Demo</a><br />
+
+    </div>
+    <div>
+        @{ 
+            Html.RenderAction("partialviewdemo");
+        }
+          
+    </div>
+</body>
+</html>
