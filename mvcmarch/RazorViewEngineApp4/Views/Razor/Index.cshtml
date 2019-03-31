@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div align="center">
+        <h1> Tommorrow Is Event @@9:00 am , Please Contact : event@gmail.com</h1><br />
+        @{ 
+            int a = 200;
+            int b = 300;
+            
+        }
+        sum = @(a+b);
+
+
+        @for(int i=1;i<20; i++)
+        {
+            if (i % 2 == 0)
+            {
+                <h2 style="color:brown">Even @i</h2>
+            }
+            else
+            {
+                <h2 style="color:blueviolet">Odd : @i</h2>
+            }
+
+        }
+
+    </div>
+</body>
+</html>

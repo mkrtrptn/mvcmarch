@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewsApp2", "ViewsApp2\View
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SahredViewApp3", "SahredViewApp3\SahredViewApp3.csproj", "{809FE262-5305-4FCF-8784-AF8E1F8F336D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorViewEngineApp4", "RazorViewEngineApp4\RazorViewEngineApp4.csproj", "{B6D6F5C7-726F-4769-8E70-5CDBB8F6C596}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{809FE262-5305-4FCF-8784-AF8E1F8F336D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{809FE262-5305-4FCF-8784-AF8E1F8F336D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{809FE262-5305-4FCF-8784-AF8E1F8F336D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D6F5C7-726F-4769-8E70-5CDBB8F6C596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D6F5C7-726F-4769-8E70-5CDBB8F6C596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D6F5C7-726F-4769-8E70-5CDBB8F6C596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D6F5C7-726F-4769-8E70-5CDBB8F6C596}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
