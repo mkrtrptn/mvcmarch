@@ -1,0 +1,7 @@
+﻿@{ 
+    foreach(var a in ViewBag.action)
+    {
+        string url = "/Dynamic/" + a;
+        <a href="@url" style="font-size:x-large"> @a </a>
+    }
+}
