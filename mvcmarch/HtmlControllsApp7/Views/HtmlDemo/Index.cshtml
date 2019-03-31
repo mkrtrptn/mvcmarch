@@ -1,0 +1,85 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <form method="post" action="~/HtmlDemo/Submit">
+        <div>
+            <table border="1" class="table table-striped">
+                <tr>
+                    <td>UserName</td>
+                    <td><input name="txtname" placeholder="Enter Username" class="input-sm" /></td>
+                </tr>
+                <tr>
+                    <td>UserName</td>
+                    <td><input type="password" name="txtpass" placeholder="Enter Password" class="input-sm" /></td>
+                </tr>
+                <tr>
+                    <td>UserName</td>
+                    <td>
+                        <select name="listbox" multiple size="4">
+                            <option>MVC</option>
+                            <option>WEB API</option>
+                            <option>ANGULAR</option>
+                            <option>C#</option>
+                            <option>JQUERY</option>
+                            <option>TYPESCRIPT</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="dropdown">
+                            <option>M.sc(CS)</option>
+                            <option>MCA</option>
+                            <option>M.Tech</option>
+
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="textarea" placeholder="Address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Passed : <input name="status" type="checkbox" checked="checked" value="passed" />
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        Select gender : <input type="radio" name="gender" value="male" /> Male
+                        <input type="radio" name="gender" value="female" />Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Weight : <input type="number" name="weight" />
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>DOB<input type="date" name="dob"/></td>
+                </tr>
+                <tr>
+                    <td>Email:<input type="email" name="email" /> </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Save" class="btn-primary" /></td>
+                </tr>
+
+            </table>
+        </div>
+    </form>
+</body>
+</html>

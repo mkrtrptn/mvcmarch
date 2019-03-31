@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>welcome</title>
+</head>
+<body>
+    <div>
+       
+           Name : @TempData.Peek("name").ToString() <br />
+           Password : @TempData["password"].ToString()<br />
+           Technologies : @TempData["tech"].ToString()<br />
+           Education :  @TempData["education"].ToString()<br />
+           Address : @TempData["address"].ToString()<br />
+           Passed : @TempData["passed"].ToString()<br />
+           Gender :  @TempData["gender"].ToString()<br />
+           Weight : @TempData["weight"].ToString()<br />
+           DOB : @TempData["dob"].ToString()<br />
+           Email : @TempData["email"].ToString()<br />
+
+       
+    </div>
+    <a href="~/HtmlDemo/close">Log Out ! </a>
+</body>
+</html>
