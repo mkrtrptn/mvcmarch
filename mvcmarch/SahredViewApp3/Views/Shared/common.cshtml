@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>common</title>
+</head>
+<body>
+    <div align="center">
+        <table align="center" border="1" style="font-size:x-large">
+            @foreach (var i in ViewBag.obj)
+            {
+                <tr><td>@i</td></tr>
+            }
+
+        </table>
+        <a href="~/Home/Index">Go  To Home Controller</a><br />
+        <a href="~/Demo/Index">Go  To Demo Controller</a>
+    </div>
+</body>
+</html>
