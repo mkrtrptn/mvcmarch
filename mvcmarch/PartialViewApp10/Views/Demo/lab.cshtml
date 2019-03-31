@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>lab</title>
+</head>
+<body>
+    @{
+        var partialviewinfo = "<h1>Extra Content Added </h1>";
+
+        partialviewinfo = Html.Partial("_header").ToString() + partialviewinfo;
+    }
+    @Html.Raw(partialviewinfo)
+</body>
+</html>

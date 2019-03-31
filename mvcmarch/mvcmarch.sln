@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieApp8", "CookieApp8\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationApp9", "ApplicationApp9\ApplicationApp9.csproj", "{01B21892-1269-4B70-A3D9-7F91DA78BAD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialViewApp10", "PartialViewApp10\PartialViewApp10.csproj", "{64E0CF21-944E-4EFD-8D05-8BCCA1E25517}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{01B21892-1269-4B70-A3D9-7F91DA78BAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01B21892-1269-4B70-A3D9-7F91DA78BAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01B21892-1269-4B70-A3D9-7F91DA78BAD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E0CF21-944E-4EFD-8D05-8BCCA1E25517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E0CF21-944E-4EFD-8D05-8BCCA1E25517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E0CF21-944E-4EFD-8D05-8BCCA1E25517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E0CF21-944E-4EFD-8D05-8BCCA1E25517}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
