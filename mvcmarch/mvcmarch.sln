@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialViewApp10", "Partial
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapApp11", "BootstrapApp11\BootstrapApp11.csproj", "{37B49BF2-ABFD-49DB-BD7E-4E6174F444F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZQCodeFirst", "ZQCodeFirst\ZQCodeFirst.csproj", "{B95F099D-4CF0-4C5C-B7E8-6F0E75A6239E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{37B49BF2-ABFD-49DB-BD7E-4E6174F444F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37B49BF2-ABFD-49DB-BD7E-4E6174F444F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37B49BF2-ABFD-49DB-BD7E-4E6174F444F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B95F099D-4CF0-4C5C-B7E8-6F0E75A6239E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95F099D-4CF0-4C5C-B7E8-6F0E75A6239E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95F099D-4CF0-4C5C-B7E8-6F0E75A6239E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95F099D-4CF0-4C5C-B7E8-6F0E75A6239E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

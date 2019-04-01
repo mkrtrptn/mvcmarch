@@ -1,0 +1,35 @@
+﻿@model ZQCodeFirst.Models.product
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>addproduct</title>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+
+            <table>
+                <tr><td>Product Name :   @Html.TextBoxFor(p => p.prodname)</td><td> @Html.ValidationMessageFor(p => p.prodname)</td></tr>
+                <tr><td>Product Price :  @Html.TextBoxFor(p => p.price)</td><td>  @Html.ValidationMessageFor(p => p.price)</td></tr>
+                <tr><td>Product Quantity :  @Html.TextBoxFor(p => p.quantity)</td><td>@Html.ValidationMessageFor(p => p.quantity)</td></tr>
+            </table>
+            <input type="submit" value="Save" class="btn btn-primary" />
+        }
+    </div>
+    @section s1
+    {
+        @Html.Action("prods")
+    }
+</body>
+</html>

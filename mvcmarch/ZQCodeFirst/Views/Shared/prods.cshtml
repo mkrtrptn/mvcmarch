@@ -1,0 +1,28 @@
+﻿@model  IEnumerable<ZQCodeFirst.Models.product>
+
+<table>
+    <tr style="background-color:aqua;font-size:x-large">
+        <td>ID</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Quantity</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+
+    @foreach (var p in Model)
+    {
+        <tr style="font-size:medium;border:solid;background-color:wheat">
+            <td>@p.prodid  </td>
+            <td>@p.prodname  </td>
+            <td>@p.price  </td>
+            <td>@p.quantity  </td>
+            <td><a href="~/Demo/editproduct/@p.prodid">Edit  |</a></td>
+            <td><a href="~/Demo/deleteproduct/@p.prodid">Delete</a></td>
+        </tr>
+    }
+
+</table>
+
+
