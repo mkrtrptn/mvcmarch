@@ -19,7 +19,7 @@
         @using (Html.BeginForm())
         {
 
-            <table>
+            <table cellpadding="10" cellspacing="10px">
                 <tr><td>Product Name :   @Html.TextBoxFor(p => p.prodname)</td><td> @Html.ValidationMessageFor(p => p.prodname)</td></tr>
                 <tr><td>Product Price :  @Html.TextBoxFor(p => p.price)</td><td>  @Html.ValidationMessageFor(p => p.price)</td></tr>
                 <tr><td>Product Quantity :  @Html.TextBoxFor(p => p.quantity)</td><td>@Html.ValidationMessageFor(p => p.quantity)</td></tr>

@@ -1,0 +1,37 @@
+﻿@model ZQCodeFirst.Models.product
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <div>
+                <table cellpadding="10" cellspacing="20">
+                    <tr><td>Product Id  </td><td>@Html.DisplayFor(p => p.prodid)</td><td>@Html.HiddenFor(p => p.prodid)</td></tr>
+                    <tr><td>Product Name </td><td>@Html.TextBoxFor(p => p.prodname)</td></tr>
+                    <tr><td>Price</td><td>@Html.TextBoxFor(p => p.price)</td></tr>
+                    <tr><td>Quantity</td><td>@Html.TextBoxFor(p => p.quantity)</td></tr>
+                    
+
+                </table>
+            </div>
+            <input type="submit" value="Update" class="btn-success" />
+
+        }
+    </div>
+    @section s1
+    {
+        @Html.Action("prods")
+     }
+</body>
+</html>
