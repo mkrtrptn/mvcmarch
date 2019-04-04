@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapApp11", "Bootstrap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZQCodeFirst", "ZQCodeFirst\ZQCodeFirst.csproj", "{B95F099D-4CF0-4C5C-B7E8-6F0E75A6239E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZQDbFirst", "ZQDbFirst\ZQDbFirst.csproj", "{F316EEF5-71B1-4E01-A5CC-0F7BC11DB005}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{B95F099D-4CF0-4C5C-B7E8-6F0E75A6239E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B95F099D-4CF0-4C5C-B7E8-6F0E75A6239E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B95F099D-4CF0-4C5C-B7E8-6F0E75A6239E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F316EEF5-71B1-4E01-A5CC-0F7BC11DB005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F316EEF5-71B1-4E01-A5CC-0F7BC11DB005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F316EEF5-71B1-4E01-A5CC-0F7BC11DB005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F316EEF5-71B1-4E01-A5CC-0F7BC11DB005}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
