@@ -93,13 +93,13 @@ namespace ZQDbFirst.Controllers
             }
         }
 
-        [HttpPost]
-        [ActionName("deleteproduct")]
+       
+        [HttpPost , ActionName("deleteproduct")]
         public ActionResult delete(int? id)
         {
             if(id != null)
             {
-                var pro = obj.productrecords.Find(id);
+                productrecord pro = obj.productrecords.Find(id);
                 obj.productrecords.Remove(pro);
                 obj.SaveChanges();
                 return View("Index");

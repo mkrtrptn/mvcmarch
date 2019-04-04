@@ -173,6 +173,7 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.0.min.map" />
+    <Content Include="Views\Demo\deleteproduct.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

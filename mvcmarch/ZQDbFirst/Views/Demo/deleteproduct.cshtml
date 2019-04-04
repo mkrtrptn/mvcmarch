@@ -1,0 +1,35 @@
+﻿@model ZQDbFirst.Models.productrecord
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <table>
+            <tr>Are Sure to delete ?</tr>
+
+            <tr><td>@Model.pid</td> </tr>
+            <tr><td>@Model.pname</td> </tr>
+            <tr><td>@Model.price</td> </tr>
+            <tr><td>@Model.quantity</td> </tr>
+            <tr>
+                <td><a href="~/Demo/deleteproduct/@Model.pid"><input type="submit" value="Delete" class="btn-danger" /></a> </td>
+                <td><a href="~/Demo/Index"><input type="button" value="Cancel" class="btn-warning" /></a></td>
+            </tr>
+        </table>
+    }
+    @section s1
+    {
+        @Html.Action("prods")
+    }
+</body>
+</html>
