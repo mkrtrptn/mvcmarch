@@ -1,0 +1,47 @@
+﻿@model ZQDbFirst.Models.productrecord
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>editproduct</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <table cellpadding="5" cellspacing="5">
+            <tr>Edit Product</tr>
+            <tr>
+                <td></td>
+                <td>@Html.HiddenFor(p => p.pid)</td>
+            </tr>
+            <tr>
+                <td>Product name</td>
+                <td>@Html.TextBoxFor(p => p.pname)</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>@Html.TextBoxFor(p => p.price)</td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>@Html.TextBoxFor(p => p.quantity)</td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Update" class="btn-success" /></td>
+                <td><a href="~/Demo/Index"><input type="button" value="cancel" class="btn-primary" /></a></td>
+            </tr>
+
+        </table>
+    }
+    @section s1
+    {
+        @Html.Action("prods")
+    }
+</body>
+</html>

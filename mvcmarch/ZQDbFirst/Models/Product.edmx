@@ -10,7 +10,7 @@
             <PropertyRef Name="pid" />
           </Key>
           <Property Name="pid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="pname" Type="varbinary" MaxLength="50" />
+          <Property Name="pname" Type="varchar" MaxLength="50" />
           <Property Name="price" Type="decimal" Precision="18" Scale="2" />
           <Property Name="quantity" Type="int" />
         </EntityType>
@@ -27,11 +27,11 @@
             <PropertyRef Name="pid" />
           </Key>
           <Property Name="pid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="pname" Type="Binary" MaxLength="50" FixedLength="false" />
+          <Property Name="pname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="price" Type="Decimal" Precision="18" Scale="2" />
           <Property Name="quantity" Type="Int32" />
         </EntityType>
-        <EntityContainer Name="Productdb" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ProductDb" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="productrecords" EntityType="Self.productrecord" />
         </EntityContainer>
       </Schema>
@@ -39,7 +39,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="REMOTEModelStoreContainer" CdmEntityContainer="Productdb">
+        <EntityContainerMapping StorageEntityContainer="REMOTEModelStoreContainer" CdmEntityContainer="ProductDb">
           <EntitySetMapping Name="productrecords">
             <EntityTypeMapping TypeName="REMOTEModel.productrecord">
               <MappingFragment StoreEntitySet="productrecord">

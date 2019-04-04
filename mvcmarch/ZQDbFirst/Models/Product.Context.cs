@@ -13,10 +13,10 @@ namespace ZQDbFirst.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Productdb : DbContext
+    public partial class ProductDb : DbContext
     {
-        public Productdb()
-            : base("name=Productdb")
+        public ProductDb()
+            : base("name=ProductDb")
         {
         }
     

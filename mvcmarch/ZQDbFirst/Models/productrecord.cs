@@ -15,7 +15,7 @@ namespace ZQDbFirst.Models
     public partial class productrecord
     {
         public int pid { get; set; }
-        public byte[] pname { get; set; }
+        public string pname { get; set; }
         public Nullable<decimal> price { get; set; }
         public Nullable<int> quantity { get; set; }
     }

@@ -3,11 +3,33 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
-        @RenderBody()
-    </div>
+    <table>
+        <tr>
+            <td>
+                <a href="~/Demo/Index">Home</a>
+            </td>
+            <td>
+                <a href="~/Demo/addproduct">Add Product</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="col-md-1" style="vertical-align:top">
+                    @RenderSection("s1", false)
+                </div>
+            </td>
+
+            <td>
+                <div class="col-md-2" style="vertical-align:top">
+                    @RenderBody()
+                </div>
+            </td>
+
+        </tr>
+    </table>
+
 </body>
 </html>

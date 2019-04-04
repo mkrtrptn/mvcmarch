@@ -8,11 +8,12 @@ using ZQDbFirst.Models;
 using System.Net;
 using System.ComponentModel.DataAnnotations;
 
+
 namespace ZQDbFirst.Controllers
 {
     public class DemoController : Controller
     {
-        Productdb obj = new Productdb();
+        ProductDb obj = new ProductDb();
 
         public ActionResult Index()
         {
@@ -41,15 +42,21 @@ namespace ZQDbFirst.Controllers
             else
             {
                 return View();
-
             }
         }
 
 
         public ActionResult editproduct(int? id)
         {
-            productrecord pro = obj.productrecords.Find(id);
-            return View(pro);
+            if(id !=null)
+            {
+                productrecord pro = obj.productrecords.Find(id);
+                return View(pro);
+            }
+            else
+            {
+                return View("Index");
+            }
         }
 
 

@@ -1,0 +1,45 @@
+﻿@model ZQDbFirst.Models.productrecord
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>addproduct</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm())
+        {
+        <table cellpadding="5" cellspacing="5">
+            <tr>
+                <td>Product Name</td>
+                <td>@Html.TextBoxFor(p => p.pname)</td>
+            </tr>
+            <tr>
+                <td>Product Price</td>
+                <td>@Html.TextBoxFor(p => p.price)</td>
+            </tr>
+            <tr>
+                <td>Product Quantity</td>
+                <td>@Html.TextBoxFor(p => p.quantity)</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Save" class="btn-primary"/>
+                </td>
+            </tr>
+        </table>
+        
+        }
+    </div>
+    @section s1
+    {
+        @Html.Action("prods")
+    }
+</body>
+</html>
