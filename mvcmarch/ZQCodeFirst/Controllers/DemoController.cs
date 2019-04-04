@@ -32,9 +32,16 @@ namespace ZQCodeFirst.Controllers
         [HttpPost]
         public ActionResult addproduct(product p)
         {
+            if(ModelState.IsValid)
+            { 
             obj.products.Add(p);
             obj.SaveChanges();
             return View("Index");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public ActionResult editproduct(int id)
