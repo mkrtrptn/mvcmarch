@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="background-color:aquamarine">
+ 
+    <table style="width:100%" cellpadding="10" cellspacing="10">
+    <tr >
+            <td style="width:30%">
+                <img src="~/Images/campus.jpg" height="300" width="500" id="img1" class="img-rounded" />
+            </td>
+            
+            <td style="width:70%">
+                <h2 style="text-align:center;color:darkgoldenrod;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:x-large"> University Of Pune </h2>
+                
+                <nav class="navbar navbar-inverse" style="color:white;font-size:large;padding:10px">
+                    <ul class="nav navbar-nav">
+                        <li><a href="~/Demo/index" >Home</a></li>
+                        <li><a href="~/Demo/about" >About</a></li>
+                        <li><a href="~/Demo/contact" >Contact</a></li>
+                        <li><a href="~/Demo/services" >Services</a></li>
+                    </ul>
+                </nav>
+             
+            </td>
+        </tr>
+
+
+        <tr>
+            <td style="width:30%" class="btn btn-group-vertical">
+                <a href="~/Demo/tutorial" class="btn btn-primary">Tutorial</a><br />
+                <a href="~/Demo/books" class="btn btn-success">Tutorial</a>
+            </td>
+
+            <td style="width:70%">
+                @RenderBody()
+            </td>
+        </tr>
+
+
+        <tr>
+            <td style="width:30%"></td>
+            <td colspan="2" style="width:70%">
+                @RenderSection("s1",false)
+            </td>
+        </tr>
+
+
+
+       
+        <tr class="navbar navbar-fixed-bottom">
+            <td colspan="2" >
+                Copyright &copy; Reserved .
+            </td>
+        </tr>
+
+
+
+
+
+    </table>
+</body>
+</html>
