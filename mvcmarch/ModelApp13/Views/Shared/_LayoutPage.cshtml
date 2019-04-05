@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+   <table style="width:100%">
+       <tr>
+           <td >
+               <nav class="navbar navbar-inverse">
+                   <ul class="nav navbar-nav">
+                       <li><a href="~/Demo/Index"> Index</a> </li>
+                       <li><a href="~/Demo/store"> Store</a> </li>
+                   </ul>
+               </nav>
+           </td>
+       </tr>
+       <tr>
+           <td>@RenderBody()</td>
+       </tr>
+   </table>
+</body>
+</html>

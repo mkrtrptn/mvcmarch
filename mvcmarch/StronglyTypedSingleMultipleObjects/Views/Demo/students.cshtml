@@ -1,0 +1,38 @@
+﻿@model IEnumerable<StronglyTypedSingleMultipleObjects.Models.StudentModel>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>students</title>
+</head>
+<body>
+    <fieldset>
+        <legend style="font-size:x-large">Students Detail </legend>
+        <table style="width:40%;background-color:beige" border="1">
+
+            <tr style="font-size:large">
+                <td>Student Id</td>
+                <td>Student Name</td>
+                <td>Student Picture</td>
+            </tr>
+
+            @foreach (var s in Model)
+            {
+                <tr>
+                    <td>@s.sid</td>
+                    <td>@s.sname</td>
+                    <td><img src="~/Images/@s.spic" height="100" width="100" /> </td>
+                </tr>
+            }
+
+
+        </table>
+    </fieldset>
+
+</body>
+</html>

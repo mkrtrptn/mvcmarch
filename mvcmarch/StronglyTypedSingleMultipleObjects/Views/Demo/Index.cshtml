@@ -1,0 +1,29 @@
+﻿@model  StronglyTypedSingleMultipleObjects.Models.StudentModel  
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend style="font-size:x-large">Student Detail</legend>
+            
+                Student Id :@Model.sid <br />
+                Student Name : @Model.sname <br />
+                Student Pic : <img src="~/Images/@Model.spic" height="100" width="100"/>
+                
+        </fieldset>
+    </div>
+    <div>
+       <a href="~/Demo/students" style="font-size:large">List Collection</a>
+    </div>
+
+</body>
+</html>
