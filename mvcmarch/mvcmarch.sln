@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelbindingUntyped", "Mode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBindingTyped", "ModelBindingTyped\ModelBindingTyped.csproj", "{7664D514-2F25-446D-882F-2D95373BBEC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionOverloading", "ActionOverloading\ActionOverloading.csproj", "{EB5A497E-1DFE-4783-B9AE-2CE78D041818}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{7664D514-2F25-446D-882F-2D95373BBEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7664D514-2F25-446D-882F-2D95373BBEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7664D514-2F25-446D-882F-2D95373BBEC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB5A497E-1DFE-4783-B9AE-2CE78D041818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5A497E-1DFE-4783-B9AE-2CE78D041818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5A497E-1DFE-4783-B9AE-2CE78D041818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5A497E-1DFE-4783-B9AE-2CE78D041818}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

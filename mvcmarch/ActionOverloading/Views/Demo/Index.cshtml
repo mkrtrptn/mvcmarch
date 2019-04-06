@@ -1,0 +1,43 @@
+﻿@model ActionOverloading.Models.arithmatic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <table style="background-color:olive">
+            <tr>
+            <td>First Number</td>
+            <td>@Html.TextBoxFor(n=>n.a)</td>
+            </tr>
+            <tr>
+                <td>Second Number</td>
+                <td>@Html.TextBoxFor(n=>n.b)</td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <input type="submit" value="add" name="operation"/>
+                    <input type="submit" value="sub" name="operation"/>
+                </td>
+            </tr>
+        </table>
+    }
+
+    @{ 
+        if(Model != null)
+        {
+          <h2>Result @Model.res </h2>  
+        }
+    }
+
+</body>
+</html>
