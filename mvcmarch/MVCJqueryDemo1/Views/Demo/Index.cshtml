@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body onload="f1()">
+    <input type="button" id="btn1" onclick="f2()" value="Click Here"/> <br />
+    
+    <span id="s1" style="color:red;font-size:large" ></span> <br />
+    
+    <h2 onclick="f3()">Tutorials</h2>
+    <div id="div1" style="background-color:chocolate;width:50%">
+        <a href="#"> Angular</a><br />
+        <a href="#"> MVC</a><br />
+        <a href="#"> DOT NET CORE</a><br />
+    </div>
+
+    <script>
+        function f1()
+        {
+            $("#div1").hide();
+        }
+
+        function f2()
+        {
+            $("#s1").html("Button Clicked");
+            $("#btn1").fadeOut(10000);
+        }
+
+        function f3()
+        {
+            $("#div1").toggle(5000);
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>
