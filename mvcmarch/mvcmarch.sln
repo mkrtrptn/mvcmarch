@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelApp", "ViewModelAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UntyedHelperControl", "UntyedHelperControl\UntyedHelperControl.csproj", "{06958B15-4905-4246-AD93-46482E9CEBB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelbindingUntyped", "ModelbindingUntyped\ModelbindingUntyped.csproj", "{A9A0BE3B-67B7-47FF-9050-2FEFC9C18EEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{06958B15-4905-4246-AD93-46482E9CEBB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06958B15-4905-4246-AD93-46482E9CEBB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06958B15-4905-4246-AD93-46482E9CEBB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A0BE3B-67B7-47FF-9050-2FEFC9C18EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A0BE3B-67B7-47FF-9050-2FEFC9C18EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A0BE3B-67B7-47FF-9050-2FEFC9C18EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A0BE3B-67B7-47FF-9050-2FEFC9C18EEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

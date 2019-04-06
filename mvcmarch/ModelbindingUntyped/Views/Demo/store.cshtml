@@ -1,0 +1,23 @@
+﻿@model ModelbindingUntyped.Models.UserModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    
+</head>
+<body>
+    <div> 
+        <fieldset>
+            <legend>Login Detail</legend>
+            Username : @Model.username <br />
+            Password : @Model.password
+        </fieldset>
+    </div>
+</body>
+</html>
