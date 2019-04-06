@@ -1,0 +1,24 @@
+﻿@model UntyedHelperControl.Models.CustomerModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>store</title>
+</head>
+<body>
+    <div> 
+        <fieldset>
+            <legend>Customer Information</legend>
+            Customer Name : @Model.custname <br />
+            Room Type : @Model.roomtype <br />
+            Amenities : @Model.amenities
+        </fieldset>
+    </div>
+</body>
+</html>

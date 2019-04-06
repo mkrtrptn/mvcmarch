@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form method="post" action="~/Demo/store">
+        <div>
+            <table>
+                <tr>
+                    <td>Name</td><td> @Html.TextBox("txtname")</td> 
+                </tr>
+                <tr>    
+                    <td>Room Type</td><td>@Html.RadioButton("room", "Delux") Delux @Html.RadioButton("room", "normal") Normal</td>
+                </tr>
+                <tr>    
+                   <td>Amenities </td><td> @Html.CheckBox("c1", true) Wifi @Html.CheckBox("c2") AC</td>
+                </tr>
+            </table>
+        </div>
+        <input type="submit" value="store"/>
+
+    </form>
+</body>
+</html>
