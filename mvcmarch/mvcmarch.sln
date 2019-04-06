@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UntyedHelperControl", "Unty
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelbindingUntyped", "ModelbindingUntyped\ModelbindingUntyped.csproj", "{A9A0BE3B-67B7-47FF-9050-2FEFC9C18EEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBindingTyped", "ModelBindingTyped\ModelBindingTyped.csproj", "{7664D514-2F25-446D-882F-2D95373BBEC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{A9A0BE3B-67B7-47FF-9050-2FEFC9C18EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9A0BE3B-67B7-47FF-9050-2FEFC9C18EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9A0BE3B-67B7-47FF-9050-2FEFC9C18EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7664D514-2F25-446D-882F-2D95373BBEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7664D514-2F25-446D-882F-2D95373BBEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7664D514-2F25-446D-882F-2D95373BBEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7664D514-2F25-446D-882F-2D95373BBEC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

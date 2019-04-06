@@ -1,0 +1,55 @@
+﻿@model ModelBindingTyped.Models.Candidate
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>store</title>
+</head>
+<body>
+   <fieldset style="background-color:darkgray">
+       <legend>Candidate Detail</legend>
+   <table>
+       <tr>
+           <td>Name</td>
+           <td>@Model.name</td>
+       </tr>
+       <tr>
+           <td>Password</td>
+           <td>@Model.password</td>
+       </tr>
+       <tr>
+           <td>Gender</td>
+           <td>@Model.gender</td>
+       </tr>
+       <tr>
+           <td>Country</td>
+           <td>@Model.country</td>
+       </tr>
+       <tr>
+           <td>Email</td>
+           <td>@Model.email</td>
+       </tr>
+       <tr>
+           <td>Skills</td>
+           <td>@Model.skills</td>
+       </tr>
+       <tr>
+           <td>DOB</td>
+           <td>@Model.dob</td>
+       </tr>
+
+       <tr>
+           <td>Phone Number</td>
+           <td>@Model.mobile</td>
+       </tr>
+
+   </table>
+   </fieldset>
+</body>
+</html>
