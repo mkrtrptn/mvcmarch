@@ -1,0 +1,25 @@
+﻿@model AdoApp1.Models.bank
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm("store", "Demo", FormMethod.Post))
+    {
+        <div>
+            Account No : @Html.TextBoxFor(u => u.accno) <br /><br />
+            Name : @Html.TextBoxFor(u => u.accname) <br /><br />
+            Balance : @Html.TextBoxFor(u => u.balance) 
+        </div><br /><br />
+        <input type="submit" value="Save"/>
+    }
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿@model AdoApp1.Models.bank
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>store</title>
+</head>
+<body>
+    <div style="background-color:black;color:white;font-size:large">
+        <fieldset>
+            <legend> User Information </legend>
+            Account Number : @Model.accno <br />
+            Name : @Model.accname <br />
+            Balance : @Model.balance<br />
+
+            @ViewBag.info <br /><br />
+            <a href="~/Demo/Index">Add Record</a>
+        </fieldset>
+    </div>
+</body>
+</html>
