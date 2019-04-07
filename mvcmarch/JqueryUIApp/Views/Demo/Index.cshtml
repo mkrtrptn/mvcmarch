@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <link href="~/Content/themes/base/all.css" rel="stylesheet" />
+</head>
+<body style="background-color:cadetblue">
+    <div id="div1" style="background-color:darkgoldenrod;font-size:large;width:30%">
+        Updated News <br />
+        Technology New <br />
+    </div>
+
+    Select Date : <input id="t1" title="Select Date"/>
+
+    <script>
+        $(function () {
+            $("#div1").draggable();
+            $("#t1").tooltip();
+            $("#t1").datepicker({ dateFormat: "dd/mm/yy" })
+        });
+
+    </script>
+
+</body>
+</html>

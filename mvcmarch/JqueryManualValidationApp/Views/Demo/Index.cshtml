@@ -1,0 +1,68 @@
+﻿@model JqueryManualValidationApp.Models.user
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    @using (Html.BeginForm("store","Demo",FormMethod.Post))
+    {
+        <table border="1">
+            <tr>
+                <td>User Id :</td>
+                <td>@Html.TextBoxFor(u=>u.userid)</td>
+                <td><span id="s1" style="color:red;font-size:large"></span></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>@Html.TextBoxFor(u => u.mobile)</td>
+                <td><span id="s2" style="color:red;font-size:large"></span></td>
+            </tr>
+            <tr>
+                <td> <input type="submit" value="Submit" /></td>
+            </tr>
+        </table>
+
+    }
+
+    <script>
+        $(function () {
+            $("#userid").blur(f1);
+            $("#mobile").blur(f2)
+        });
+
+
+        function f1() {
+            if ($("#userid").val() == "") {
+                $("#s1").html("Enter User Id");
+            }
+            else {
+                $("#s1").html("");
+            }
+        }
+
+        function f2() {
+            if ($("#mobile").val().length != 10) {
+                $("#s2").html("Enter 10 Digit Mobile");
+            }
+            else {
+                $("#s2").html("");
+            }
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
