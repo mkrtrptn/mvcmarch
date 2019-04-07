@@ -1,0 +1,26 @@
+﻿@model IEnumerable<AdoCrudApp.Models.bankapp>
+<html>
+<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <table class="table table-hover table-dark">
+
+        <tr>
+            <td>Account No</td>
+            <td>Name </td>
+            <td>Balance</td>
+        </tr>
+
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.accno</td>
+                <td>@i.accname</td>
+                <td>@i.balance</td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

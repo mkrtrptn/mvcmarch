@@ -1,0 +1,33 @@
+﻿@model AdoCrudApp.Models.bankapp
+
+<html>
+<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    @using (Html.BeginForm("store", "demo", FormMethod.Post))
+    {
+
+        <table class="table table-striped table-dark " style="width:30%">
+            <tr>
+                <td>Account No : </td>
+                <td> @Html.TextBoxFor(c => c.accno)</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>@Html.TextBoxFor(c => c.accname)</td>
+            </tr>
+            <tr>
+                <td>Balance</td>
+                <td>@Html.TextBoxFor(c => c.balance)</td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Save" class="btn btn-success" /></td>
+                <td></td>
+            </tr>
+        </table> <br /><br />
+
+    }
+
+</body>
+</html>

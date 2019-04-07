@@ -1,0 +1,86 @@
+﻿@model AdoCrudApp.Models.bankapp
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body style="background-color:cadetblue">
+
+    <input type="button" value="Add" class="btn btn-primary" onclick="f1()" /> &nbsp;&nbsp;
+    <input type="button" value="Cancel" class="btn btn-secondary" onclick="f2()" />
+    <div>
+        @using (Html.BeginForm("manip", "Demo", FormMethod.Post))
+        {
+
+            <table class="table table-striped table-dark " style="width:30%">
+                <tr>
+                    <td>Account No : </td>
+                    <td> @Html.TextBoxFor(c => c.accno, new { @Value = ViewBag.accno })</td>
+                    <td><input type="submit" value="search" name="op"/></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>@Html.TextBoxFor(c => c.accname, new { @Value = ViewBag.accname })</td>
+                </tr>
+                <tr>
+                    <td>Balance</td>
+                    <td>@Html.TextBoxFor(c => c.balance, new { @Value = ViewBag.balance })</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="delete" name="op" class="btn btn-danger" /></td>
+                    <td><input type="submit" value="update" name="op" class="btn btn-secondary" /></td>
+                    <td></td>
+                </tr>
+            </table> <br /><br />
+
+        }
+    </div>
+
+
+
+    <div id="div1">
+        @{ 
+            Html.RenderAction("add");
+        }
+    </div>
+
+    <div>
+        @{
+            Html.RenderAction("record");
+        }
+    </div>
+
+    <div id="div2">
+
+    </div>
+
+    <script>
+        $(function () {
+            
+            $("#div1").hide();
+            
+        });
+
+        function f1() {
+            $("#div1").show();
+        }
+
+        function f2() {
+            $("#div1").hide();
+        }
+
+
+    </script>
+
+</body>
+</html>
