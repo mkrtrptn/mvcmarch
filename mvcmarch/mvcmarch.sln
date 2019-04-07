@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoApp1", "AdoApp1\AdoApp1.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoCrudApp", "AdoCrudApp\AdoCrudApp.csproj", "{7C169ED9-7EEE-4555-A44D-1AD2F47D53B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoMovieGalleryApp", "AdoMovieGalleryApp\AdoMovieGalleryApp.csproj", "{4E36B0DB-A9D9-4630-BA04-D02F283B2C1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{7C169ED9-7EEE-4555-A44D-1AD2F47D53B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C169ED9-7EEE-4555-A44D-1AD2F47D53B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C169ED9-7EEE-4555-A44D-1AD2F47D53B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E36B0DB-A9D9-4630-BA04-D02F283B2C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E36B0DB-A9D9-4630-BA04-D02F283B2C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E36B0DB-A9D9-4630-BA04-D02F283B2C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E36B0DB-A9D9-4630-BA04-D02F283B2C1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

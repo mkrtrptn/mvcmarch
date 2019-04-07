@@ -1,0 +1,44 @@
+﻿@model AdoMovieGalleryApp.Models.movie
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>add</title>
+</head>
+<body>
+
+    <h3><a href="~/Movie/Index">Home</a></h3>
+
+    @using (Html.BeginForm("store", "Movie", FormMethod.Post, new { enctype="multipart/form-data"} ) )
+    {
+        <table>
+
+            <tr>
+                <td>Movie Id</td>
+                <td>@Html.TextBoxFor(m => m.movieid)</td>
+            </tr>
+
+            <tr>
+                <td>Movie Name</td>
+                <td>@Html.TextBoxFor(m=>m.moviename)</td>
+            </tr>
+            <tr>
+                <td>Movie File</td>
+                <td><input type="file" name="m1"/></td>
+            </tr>
+            <tr>
+                <td> <input type="submit" value="Save"/> </td>
+                <td></td>
+            </tr>
+
+        </table>
+    }
+
+</body>
+</html>

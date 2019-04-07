@@ -1,0 +1,47 @@
+﻿@model  IEnumerable<AdoMovieGalleryApp.Models.movie>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>display</title>
+</head>
+<body style="background-color:chartreuse">
+
+    <h3><a href="~/Movie/Index">Home</a></h3>
+   
+    <table>
+        <tr>
+            <td>
+                <table border="1" cellpadding="1" cellspacing="1">
+                    <tr style="font-size:large">
+                        <td>Id</td>
+                        <td>Name</td>
+                        <td>Play</td>
+                        <td>Delete</td>
+                    </tr>
+                    @foreach(var m in Model)
+                    {
+                        <tr>
+                            <td>@m.movieid</td>
+                            <td>@m.moviename</td>
+                            <td><a href="~/videos/@m.moviefile" target="f1">Play</a></td>
+                            <td><a href="~/Movie/delete/@m.movieid">Delete</a></td>
+                        </tr>
+                    }
+
+                </table>
+            </td>
+            <td>
+                <iframe name="f1" height="200" width="200"></iframe>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
