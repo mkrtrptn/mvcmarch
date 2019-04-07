@@ -1,0 +1,43 @@
+﻿@model DataAnnotationValidationApp.Models.UserModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+   
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div> 
+        <table class="table table-bordered table-primary" align="center" style="width:50%">
+            <tr>
+                <td>UserName : @Html.DisplayFor(u => u.uname)</td>
+            </tr>
+            <tr>
+                <td>Password : @Html.DisplayFor(u => u.password)</td>
+            </tr>
+            <tr>
+                <td>Address : @Html.DisplayFor(u => u.address)</td>
+            </tr>
+            <tr>
+                <td>Age : @Html.DisplayFor(u => u.age)</td>
+            </tr>
+            <tr>
+                <td>DOB : @Html.DisplayFor(u => u.dob)</td>
+            </tr>
+            <tr>
+                <td>Mobile : @Html.DisplayFor(u => u.mobile)</td>
+            </tr>
+            <tr>
+                <td>Email : @Html.DisplayFor(u => u.email)</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>

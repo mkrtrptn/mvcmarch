@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JqueryUIApp", "JqueryUIApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JqueryManualValidationApp", "JqueryManualValidationApp\JqueryManualValidationApp.csproj", "{82777E67-3247-4FB7-AB07-2E5C2A1CCA64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAnnotationValidationApp", "DataAnnotationValidationApp\DataAnnotationValidationApp.csproj", "{0C5564A8-2B73-4323-9E3D-A7C69839A075}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{82777E67-3247-4FB7-AB07-2E5C2A1CCA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82777E67-3247-4FB7-AB07-2E5C2A1CCA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82777E67-3247-4FB7-AB07-2E5C2A1CCA64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C5564A8-2B73-4323-9E3D-A7C69839A075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C5564A8-2B73-4323-9E3D-A7C69839A075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C5564A8-2B73-4323-9E3D-A7C69839A075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C5564A8-2B73-4323-9E3D-A7C69839A075}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
