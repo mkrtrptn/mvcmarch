@@ -1,0 +1,45 @@
+﻿@model  IEnumerable<CodeFirstApp.Models.dept>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body style="background-color:cornflowerblue">
+    
+    <div style="color:black;background-color:aliceblue;border-radius:20px;box-shadow:0 0 10px black" align="center">
+
+        <a href="~/Demo/Index" class="btn btn-primary">Home</a>
+        <br />
+        <br />
+        <br />
+        <table class="table table-dark" style="width:40%">
+            <tr>
+                <td>Department Id</td>
+                <td>Department Name</td>
+                <td></td>
+                <td></td>
+            </tr>
+            @foreach (var i in Model)
+            {
+                <tr>
+                    <td>@i.did </td>
+                    <td>@i.dname </td>
+                    <td><a href="~/Demo/editdept/@i.did" class="btn btn-info">Edit</a></td>
+                    <td><a href="~/Demo/deletedept/@i.did" class="btn btn-danger">Delete</a></td>
+                    <td></td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</body>
+</html>

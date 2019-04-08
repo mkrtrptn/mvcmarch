@@ -1,0 +1,68 @@
+﻿@model CodeFirstApp.Models.employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body style="background-color:cornflowerblue">
+    
+    <div style="color:black;background-color:aliceblue;border-radius:20px;box-shadow:0 0 10px black" align="center">
+
+        <a href="~/Demo/Index" class="btn btn-primary">Home</a>
+        <br />
+        <br />
+        <br />
+
+
+        @using (Html.BeginForm())
+        {
+            <table style="width:40%" class="table table-dark">
+
+                <tr>
+                    <td>Employee Id</td>
+                    <td>@Html.DisplayFor(e => e.eid)</td>
+                    <td>@Html.HiddenFor(e => e.eid)</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>@Html.TextBoxFor(e => e.ename)</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>@Html.TextBoxFor(e => e.email)</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>@Html.TextBoxFor(e => e.address)</td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td>@Html.TextBoxFor(e => e.mobile)</td>
+                </tr>
+                <tr>
+                    <td>Department</td>
+                    <td>
+                        @Html.DropDownListFor(e => e.did, new SelectList(ViewBag.dep, "value", "text"))
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Update" class="btn btn-warning" /></td>
+                    <td><a href="~/Demo/Index" class="btn btn-secondary">Cancel</a></td>
+                </tr>
+
+            </table>
+        }
+
+        </div>
+</body>
+</html>

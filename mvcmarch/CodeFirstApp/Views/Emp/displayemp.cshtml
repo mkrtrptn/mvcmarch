@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CodeFirstApp.Models.EmpDept>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="background-color:cornflowerblue">
+   
+    <div style="color:black;background-color:aliceblue;height:100%;border-radius:20px;box-shadow:0 0 10px black;border-spacing:20px">
+    
+        <a href="~/Demo/Index" class="btn btn-primary" >Home</a>
+        <br />
+        <br />
+        <br />
+        <table style="border-radius:20px" class="table table-dark">
+            <tr>
+                <td>Employee ID</td>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Address</td>
+                <td>Mobile</td>
+                <td>Department</td>
+            </tr>
+
+            @foreach (var e in Model)
+            {
+                <tr>
+                    <td>@e.eid</td>
+                    <td>@e.ename</td>
+                    <td>@e.email</td>
+                    <td>@e.address</td>
+                    <td>@e.mobile</td>
+                    <td>@e.dname</td>
+                    <td><a href="~/Emp/editemp/@e.eid" class="btn btn-info">Edit</a></td>
+                    <td><a href="~/Emp/deleteemp/@e.eid" class="btn btn-danger">Delete</a></td>
+                    <td></td>
+                </tr>
+            }
+
+
+        </table>
+    </div>
+</body>
+</html>
