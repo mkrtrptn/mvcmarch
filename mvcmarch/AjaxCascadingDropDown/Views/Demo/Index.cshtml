@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body style="background-color:blueviolet">
+    @Html.DropDownList("cat")
+    <br />
+    <br />
+    <br />
+    <select id="s1">
+
+    </select>
+     
+
+    <script>
+        $(function () {
+            $("#cat").change(f1)
+        });
+
+        function f1() {
+            $.ajax({
+                url: "Demo/getproducts",
+                type: "post",
+                data: {"catid": $("#cat").val() },
+                success: function (r) {
+                    $("#s1").empty();
+
+                    $("#s1").append(new Option("-Select Product-"));
+
+                    $.each(r, function (a, i) {
+                        $("#s1").append(new Option(i.proddesc, i.prodid ));
+                    });
+                },
+                error: function () {
+                    window.alert("Error Occured !");
+                },
+                complete: function () {
+                    window.alert("Data Retrived ");
+                }
+            });
+        }
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
