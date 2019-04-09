@@ -1,0 +1,40 @@
+﻿@model  IEnumerable<EagerLazyLoadingAndMetadata.Models.ProductCategory>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index2</title>
+</head>
+<body>
+   <table>
+       <tr>
+           <td>Prod Id</td>
+           <td>Prod Desc</td>
+           <td>Price</td>
+           <td>Category</td>
+           <td>Cate Id</td>
+       </tr>
+
+       @foreach(var p in Model)
+       {
+           
+           <tr>
+               <td>@p.prodid</td>
+               <td>@p.prodesc</td>
+               <td>@p.prodprice</td>
+               <td>@p.catedec</td>
+               <td>@p.cateid</td>
+           </tr>
+
+       }
+   </table>
+
+
+</body>
+</html>
