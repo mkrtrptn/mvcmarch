@@ -1,0 +1,27 @@
+﻿@model  IEnumerable<DbFirstApp.Models.product>
+
+<html>
+<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <table class="table table-dark" border="1">
+        <tr>
+            <td>Product Id</td>
+            <td>Product Desc</td>
+            <td>Price</td>
+            <td>Category</td>
+        </tr>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.prodid</td>
+                <td>@i.proddesc</td>
+                <td>@i.prodprice</td>
+                <td>@i.cateid</td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

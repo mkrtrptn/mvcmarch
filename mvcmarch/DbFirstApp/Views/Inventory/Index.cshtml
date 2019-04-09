@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="background-color:chartreuse">
+    <table style="width:100%">
+        <tr>
+            <td style="width:30%">
+                <a href="#" onclick="f1()" class="btn btn-success">Add Product</a>
+                <a href="#" onclick="f2()" class="btn btn-primary">Display Product</a>
+            </td>
+            <td style="width:70%">
+                <div id="div1"></div>
+            </td>
+        </tr>
+    </table>
+    <script>
+
+        function f1() {
+            $("#div1").html("<img src='/Images/loading.gif' heigth=150px  width=150px>");
+
+            $("#div1").load("/Inventory/addproduct");
+        }
+
+
+        function f2() {
+            $("#div1").html("<img src='/images/loading.gif' height=150px width=150px>");
+            $("#div1").load("/Inventory/displayproduct");
+        }
+
+        
+    </script>
+
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,35 @@
+﻿@model DbFirstApp.Models.product
+
+<html>
+<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body style="background-color:coral">
+
+    @using (Html.BeginForm())
+    {
+    <table class="table table-dark">
+        <tr>
+            <td>Product Desc</td>
+            <td>@Html.TextBoxFor(p => p.proddesc)</td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>@Html.TextBoxFor(p => p.prodprice)</td>
+        </tr>
+        <tr>
+            <td>Category Id</td>
+            <td>@Html.DropDownListFor(p => p.cateid, new SelectList(ViewBag.cat, "value", "text"), "-Select Category-")</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Save" class="btn btn-success"/> </td>
+            <td></td>
+        </tr>
+    </table>
+    }
+</body>
+</html>
+
+
+   
