@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxReadXmlFileDemo", "Ajax
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxCascadingDropDown", "AjaxCascadingDropDown\AjaxCascadingDropDown.csproj", "{5950F1E5-AB92-496E-8F78-482CBFE6AFAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxCascadings", "AjaxCascadings\AjaxCascadings.csproj", "{B74FD9E3-B460-42FC-97B0-F14F557EE650}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{5950F1E5-AB92-496E-8F78-482CBFE6AFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5950F1E5-AB92-496E-8F78-482CBFE6AFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5950F1E5-AB92-496E-8F78-482CBFE6AFAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B74FD9E3-B460-42FC-97B0-F14F557EE650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74FD9E3-B460-42FC-97B0-F14F557EE650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74FD9E3-B460-42FC-97B0-F14F557EE650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74FD9E3-B460-42FC-97B0-F14F557EE650}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

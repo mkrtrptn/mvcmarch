@@ -1,0 +1,58 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body style="background-color:cornflowerblue;font-size:large">
+    <div>
+        @Html.DropDownList("cat")
+        <br />
+        <br />
+        <select id="ddl"></select>
+    </div>
+    <script>
+        $(function () {
+            $("#ddl").append(new Option("-Select Product-"));
+            $("#cat").change(f1);
+        });
+
+        function f1() {
+            
+            $.ajax({
+                url: "/Demo/getprod",
+                type: "post",
+                data: { "id": $("#cat").val() },
+                success: function (r) {
+                    $("#ddl").empty();
+                    $("#ddl").append(new Option("-Select Product-"));
+                    $.each(r, function (i, v) {
+                       $("#ddl").append(new Option(v.proddesc , v.prodid));
+                    });
+
+                },
+                error: function () {
+                    window.alert("Error ");
+                },
+                complete: function () {
+                    window.alert("Products Fetched ");
+                }
+
+
+
+            });
+
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>
