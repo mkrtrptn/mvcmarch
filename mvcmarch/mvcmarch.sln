@@ -77,6 +77,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxCascadingDropDown", "Aj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxCascadings", "AjaxCascadings\AjaxCascadings.csproj", "{B74FD9E3-B460-42FC-97B0-F14F557EE650}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiServer", "WebApiServer\WebApiServer.csproj", "{65515217-1141-4A0C-9220-1096A97CCD4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClient", "WebApiClient\WebApiClient.csproj", "{481B10DB-E36B-4FAD-8FB2-6B4266F0E3A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -231,6 +235,14 @@ Global
 		{B74FD9E3-B460-42FC-97B0-F14F557EE650}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B74FD9E3-B460-42FC-97B0-F14F557EE650}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B74FD9E3-B460-42FC-97B0-F14F557EE650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65515217-1141-4A0C-9220-1096A97CCD4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65515217-1141-4A0C-9220-1096A97CCD4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65515217-1141-4A0C-9220-1096A97CCD4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65515217-1141-4A0C-9220-1096A97CCD4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481B10DB-E36B-4FAD-8FB2-6B4266F0E3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481B10DB-E36B-4FAD-8FB2-6B4266F0E3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481B10DB-E36B-4FAD-8FB2-6B4266F0E3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481B10DB-E36B-4FAD-8FB2-6B4266F0E3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
