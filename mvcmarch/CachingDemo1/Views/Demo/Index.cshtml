@@ -1,0 +1,59 @@
+﻿@model IEnumerable<CachingDemo1.Models.product>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.prodid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.proddesc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prodprice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cateid)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.prodid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.proddesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prodprice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cateid)
+            </td>
+           
+        </tr>
+        
+    }
+    
+    </table>
+    <b>
+        @DateTime.Now.ToString();
+    </b>
+</body>
+</html>
